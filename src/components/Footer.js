@@ -10,7 +10,7 @@ function Footer() {
     return (
         <div>
             <Grid container sx={{ color: "#abb7c4" }} p={10} mt={4} className="bg-footer">
-                <Grid item xs={4}>
+                <Grid item md={4} xs={12}>
                     <Typography variant="h4" fontWeight={700} sx={{ color: "#fff" }}>H Moives</Typography>
                     <Typography variant="body1" mt={3}>Cinemy Movies and Tv Series</Typography>
                     <Typography variant="body1" mt={1}>Hoang Le</Typography>
@@ -49,7 +49,7 @@ function Footer() {
                     </NavLink>
                 </Grid>
 
-                <Grid item xs={4}>
+                <Grid item md={4} xs={12}>
                     <Typography variant="h6" fontWeight={700} sx={{ color: "#fff" }}>Newsletter</Typography>
                     <Typography variant="body1" mt={1}>Subscribe to our newsletter system now to get latest news from us</Typography>
                     <Grid item xs={12} mt={3}>
