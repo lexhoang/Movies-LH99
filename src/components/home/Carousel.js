@@ -14,7 +14,7 @@ const settings = {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    initialSlide: 12,
+    initialSlide: 15,
     arrows: false
 };
 
@@ -50,7 +50,6 @@ function Carousel() {
                                     objectFit: "cover",
                                     width: "100%",
                                     minHeight: "650px",
-                                    filter: "brightness(80%)"
                                 }}
                                     src={`https://www.themoviedb.org/t/p/w1920_and_h800_multi_faces/${movie.backdrop_path}`} />
                             </Grid>

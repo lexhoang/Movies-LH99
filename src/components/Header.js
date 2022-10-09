@@ -22,7 +22,10 @@ export default function Header() {
         }}>
             <Grid container py={1} style={{ borderBottom: "1px solid #424242" }}>
                 <Grid item md={6} xs={6} sx={{ pl: 2 }} >
-                    <Typography component={Link} to="/" variant="h4" style={{ textDecoration: "none", color: "white", fontSize: "30px" }} fontWeight={900}>LH FILM</Typography>
+                    <Typography component={Link} to="/" variant="h4"
+                        style={{ textDecoration: "none", color: "white", fontSize: "30px" }} fontWeight={900}>
+                        LH FILM
+                    </Typography>
                 </Grid>
 
                 <Grid item md={6} xs={6} textAlign="right" sx={{ pr: 2 }}>

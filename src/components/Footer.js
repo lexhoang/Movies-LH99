@@ -11,7 +11,7 @@ function Footer() {
         <div>
             <Grid container sx={{ color: "#abb7c4" }} p={10} mt={4} className="bg-footer">
                 <Grid item md={4} xs={12} mb={4}>
-                    <Typography variant="h4" fontWeight={700} sx={{ color: "#fff" }}>Hoàng Film</Typography>
+                    <Typography variant="h4" fontWeight={700} sx={{ color: "#fff" }}>Hoàng Movies</Typography>
                     <Typography variant="body1" mt={1}>Cinemy Movies and Tv Series</Typography>
                     <Typography variant="body1" mt={1}>Hoang Le</Typography>
                     <Typography variant="body1" mt={1}>call Us: (+84) 822103199</Typography>
