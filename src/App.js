@@ -7,7 +7,9 @@ import HomePage from './page/HomePage';
 import MoivesPage from './page/MoviesPage';
 import TvSeriesPage from './page/TvSeriesPage';
 import TreadingPage from './page/TreadingPage';
+import MediaDetailPage from './page/MediaDetailPage';
 import { Routes, Route } from "react-router-dom";
+import "react-modal-video/scss/modal-video.scss"
 
 
 
@@ -22,6 +24,7 @@ function App() {
         <Route path="/tvseries/page/:page" element={<TvSeriesPage />}></Route>
         <Route path="/treading" element={<TreadingPage />}></Route>
         <Route path="/treading/page/:page" element={<TreadingPage />}></Route>
+        <Route path="/:type/:movieId" element={<MediaDetailPage />}></Route>
       </Routes>
     </div>
   );
