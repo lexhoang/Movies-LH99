@@ -35,7 +35,7 @@ function Moives() {
             </Grid>
 
             <div  >
-                <Grid container justifyContent="center" >
+                <Grid container justifyContent="center">
                     {movies.length > 0 ?
                         movies.map((movie, index) =>
                             <Grid key={index} item md xs={6} mb={3}>

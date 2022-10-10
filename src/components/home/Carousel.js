@@ -2,7 +2,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
-import {  Grid } from "@mui/material";
+import { Grid } from "@mui/material";
 import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 
@@ -36,6 +36,7 @@ function Carousel() {
             .catch((error) => {
                 console.log(error)
             })
+        window.scrollTo(0, 0)
     }, [])
 
     return (
