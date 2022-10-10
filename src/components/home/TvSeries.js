@@ -16,6 +16,9 @@ function TvSeries() {
             .then((data) => {
                 setTv(data.results.slice(0, 8))
             })
+            .catch((error) => {
+                console.log(error)
+            });
     }, [])
 
 

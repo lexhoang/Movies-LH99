@@ -39,7 +39,7 @@ function TopRated() {
                     {topRated.length > 0 ?
                         topRated.map((topRated, index) =>
                             <Grid key={index} item md xs={6} mb={3}>
-                                <NavLink to={`/topRated/${topRated.id}`} className="content-card" >
+                                <NavLink to={`/movie/${topRated.id}`} className="content-card" >
                                     <span style={{
                                         color: topRated.vote_average > 8 ? "#34cc34" : topRated.vote_average > 6 ? "orange" : "red"
                                     }}>{Math.round(topRated.vote_average * 10) / 10}</span>

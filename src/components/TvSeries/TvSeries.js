@@ -1,13 +1,12 @@
 import { Grid, Button, Typography, Input, Pagination } from "@mui/material";
 import { useEffect, useState } from "react";
 import { NavLink, useParams, useNavigate } from 'react-router-dom';
-import noInfoImg from "../../assets/image/noInfo.jpeg"
+import noInfoImg from "../../assets/image/noInfo.jpeg";
 
 import {
     Dropdown,
     DropdownToggle,
     DropdownMenu,
-    DropdownItem,
 } from 'reactstrap';
 
 

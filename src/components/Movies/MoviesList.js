@@ -1,12 +1,12 @@
 import { Grid, Button, Typography, Input, Pagination } from "@mui/material";
 import { useEffect, useState } from "react";
 import { NavLink, useParams, useNavigate } from 'react-router-dom';
+import noInfoImg from "../../assets/image/noInfo.jpeg"
 
 import {
     Dropdown,
     DropdownToggle,
     DropdownMenu,
-    DropdownItem,
 } from 'reactstrap';
 
 
@@ -89,6 +89,9 @@ function MoivesList() {
                 //console.log(res.genres)
                 setGenresMovie(res.genres)
             })
+            .catch((error) => {
+                console.log(error)
+            })
     }, [])
     return (
         <div style={{ paddingTop: "8rem" }}>
@@ -158,7 +161,7 @@ function MoivesList() {
                                     <span style={{
                                         color: movie.vote_average > 8 ? "#34cc34" : movie.vote_average > 6 ? "orange" : "red"
                                     }}>{Math.round(movie.vote_average * 10) / 10}</span>
-                                    <img alt="poster" src={`https://image.tmdb.org/t/p/w300${movie.poster_path}`}></img>
+                                    <img alt="poster" src={movie.poster_path !== null ? `https://image.tmdb.org/t/p/w300${movie.poster_path}` : noInfoImg}></img>
                                     <div className="content-title">{movie.title + `(${movie.release_date ? movie.release_date.slice(0, 4) : "unknow"})`}</div>
                                 </NavLink>
                             </Grid>

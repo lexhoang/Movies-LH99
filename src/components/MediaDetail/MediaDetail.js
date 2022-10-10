@@ -1,4 +1,4 @@
-import { Container, Grid, Typography, Modal, Box, } from '@mui/material';
+import { Grid, Typography, Modal, Box, } from '@mui/material';
 import { useState, useEffect } from 'react';
 import { useParams } from "react-router-dom";
 import bgImage from "../../assets/image/bgImage.png"
@@ -35,11 +35,17 @@ function MediaDetail() {
         getData(`https://api.themoviedb.org/3/${params.type}/${params.movieId}?api_key=39f5897aa2b8f37692fc06e61504587d&language=en-US`)
             .then(data => {
                 setMovie(data);
+            })
+            .catch((error) => {
+                console.log(error)
             });
 
         getData(`https://api.themoviedb.org/3/${params.type}/${params.movieId}/videos?api_key=39f5897aa2b8f37692fc06e61504587d&language=en-US`)
             .then(data => {
                 setVideo(data.results)
+            })
+            .catch((error) => {
+                console.log(error)
             })
         window.scrollTo(0, 0)
     }, [params.movieId, params.type])

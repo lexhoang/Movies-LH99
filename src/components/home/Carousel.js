@@ -2,7 +2,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
-import { Button, Grid } from "@mui/material";
+import {  Grid } from "@mui/material";
 import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 
@@ -14,7 +14,7 @@ const settings = {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    initialSlide: 15,
+    initialSlide: 17,
     arrows: false
 };
 

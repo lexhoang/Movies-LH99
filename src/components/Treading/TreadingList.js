@@ -1,4 +1,4 @@
-import { Grid, Button, Typography, Input, Pagination } from "@mui/material";
+import { Grid, Typography, Pagination } from "@mui/material";
 import { useEffect, useState } from "react";
 import { NavLink, useParams, useNavigate } from 'react-router-dom';
 
@@ -22,9 +22,10 @@ function TreadingList() {
             .then((data) => {
                 setTreading(data.results)
             })
-        // .catch((error) => {
-        //     console.log(error)
-        // })
+            .catch((error) => {
+                console.log(error)
+            })
+        window.scrollTo(0, 0)
     }, [params])
 
 
