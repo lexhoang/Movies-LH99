@@ -153,7 +153,7 @@ function MoivesList() {
             </div>
 
             <div>
-                <Grid container justifyContent="center" mt={4}>
+                <Grid container justifyContent="center" mt={4} className="animate__animated animate__backInLeft">
                     {movies.length > 0 ?
                         movies.map((movie, index) =>
                             <Grid key={index} item md={1.7} xs={6} mb={8}>

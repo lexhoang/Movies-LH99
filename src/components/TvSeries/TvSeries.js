@@ -149,7 +149,7 @@ function TvSeriesList() {
                 </Dropdown>
             </div>
 
-            <Grid container justifyContent="center" mt={4}>
+            <Grid container justifyContent="center" mt={4} className="animate__animated animate__backInLeft">
                 {tvSeries.length > 0 ?
                     tvSeries.map((tvSeries, index) =>
                         <Grid key={index} item md={1.7} xs={6} mb={8}>

@@ -10,7 +10,7 @@ import TreadingPage from './page/TreadingPage';
 import MediaDetailPage from './page/MediaDetailPage';
 import { Routes, Route } from "react-router-dom";
 import "react-modal-video/scss/modal-video.scss"
-
+import 'animate.css';
 
 
 function App() {
