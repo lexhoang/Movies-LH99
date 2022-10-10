@@ -39,7 +39,7 @@ function TreadingList() {
                 <Pagination onChange={(event, value) => { navigate(`/treading/page/${value}`); setCurrentPage(value) }} page={currentPage} variant="outlined" count={3} />
             </Grid>
 
-            <Grid container justifyContent="center" mt={5} className="animate__animated animate__backInLeft">
+            <Grid container justifyContent="center" mt={5} className="animate__animated animate__fadeInLeft">
                 {treading.length > 0 ?
                     treading.map((treading, index) =>
                         <Grid key={index} item md={1.7} xs={6} mb={8}>
