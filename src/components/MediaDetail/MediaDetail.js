@@ -41,6 +41,7 @@ function MediaDetail() {
             .then(data => {
                 setVideo(data.results)
             })
+        window.scrollTo(0, 0)
     }, [params.movieId, params.type])
 
     const handleClickTrailer = () => {
