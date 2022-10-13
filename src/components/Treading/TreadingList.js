@@ -1,6 +1,7 @@
 import { Grid, Typography, Pagination } from "@mui/material";
 import { useEffect, useState } from "react";
 import { NavLink, useParams, useNavigate } from 'react-router-dom';
+import noInfoImg from "../../assets/image/noInfo.jpeg";
 
 
 function TreadingList() {
@@ -47,7 +48,7 @@ function TreadingList() {
                                 <span style={{
                                     color: treading.vote_average > 8 ? "#34cc34" : treading.vote_average > 6 ? "orange" : "red"
                                 }}>{Math.round(treading.vote_average * 10) / 10}</span>
-                                <img alt="poster" src={`https://image.tmdb.org/t/p/w300${treading.poster_path}`}></img>
+                                <img alt="poster" src={treading.poster_path !== null ? `https://image.tmdb.org/t/p/w300${treading.poster_path}` : noInfoImg} ></img>
                                 <div className="content-title">{`${treading.media_type !== "tv" ? treading.title + "(" + treading.release_date.slice(0, 4) + ")" : treading.name + "(" + treading.first_air_date.slice(0, 4) + ")"}`}</div>
                             </NavLink>
                         </Grid>

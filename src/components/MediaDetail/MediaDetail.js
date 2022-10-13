@@ -150,7 +150,7 @@ function MediaDetail() {
 
                         <Grid container mt={1}>
                             <Typography variant="body1" fontWeight={700}>
-                                <span style={{ color: "#b3b3b3" }}>DURATION : </span>
+                                <span style={{ color: "#b3b3b3" }}>STATUS : </span>
                                 {movie.status}
                             </Typography>
                         </Grid>
