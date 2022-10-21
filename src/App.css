@@ -111,6 +111,17 @@ body {
   width: "80%";
 }
 
+.cast-image {
+  border: 2px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #000;
+  cursor: pointer;
+  height: 140px;
+  margin-bottom: 5px;
+  object-fit: cover;
+  width: 140px;
+}
+
 @media only screen and (max-width: 768px) {
   .bg-media {
     min-height: 1500px;
