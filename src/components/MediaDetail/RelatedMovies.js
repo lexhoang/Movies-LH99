@@ -38,13 +38,13 @@ function RelatedMovies() {
                     {relatedMovies.length > 0 ?
                         relatedMovies.map((relatedMovie, index) =>
                             <Grid key={index} item md xs={6} mb={3}>
-                                <NavLink to={`/${params.type}/${relatedMovie.id}`} className="content-card" >
+                                <a href={`/${params.type}/${relatedMovie.id}`} className="content-card" >
                                     <span style={{
                                         color: relatedMovie.vote_average > 8 ? "#34cc34" : relatedMovie.vote_average > 6 ? "orange" : "red"
                                     }}>{Math.round(relatedMovie.vote_average * 10) / 10}</span>
                                     <img alt="poster" src={relatedMovie.poster_path !== null ? `https://image.tmdb.org/t/p/w300${relatedMovie.poster_path}` : noInfoImg}></img>
                                     <div className="content-title">{`${params.type !== "tv" ? relatedMovie.title + "(" + relatedMovie.release_date.slice(0, 4) + ")" : relatedMovie.name + "(" + relatedMovie.first_air_date.slice(0, 4) + ")"}`}</div>
-                                </NavLink>
+                                </a>
                             </Grid>
                         )
                         : null}
