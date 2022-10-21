@@ -26,8 +26,8 @@ function RelatedMovies() {
 
 
     return (
-        <div style={{ borderBottom: "1px solid #424242", marginTop: "80px" }}>
-            <Grid container mt={16} px={5} mb={6}>
+        <div style={{ borderBottom: "1px solid #424242" }}>
+            <Grid container mt={10} px={5} mb={6}>
                 <Grid item xs={12} textAlign="center">
                     <Typography color="secondary" variant="h4" fontWeight={700}> Các Phim Liên Quan</Typography>
                 </Grid>
