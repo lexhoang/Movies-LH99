@@ -103,7 +103,7 @@ body {
 
 /* MEDIA DETAIL */
 .bg-media {
-  min-height: 650px
+  min-height: 720px
 }
 
 .img-media {
@@ -120,6 +120,10 @@ body {
   margin-bottom: 5px;
   object-fit: cover;
   width: 140px;
+}
+
+.tittle-last {
+  font-family:'Courier New', Courier, monospace
 }
 
 @media only screen and (max-width: 768px) {

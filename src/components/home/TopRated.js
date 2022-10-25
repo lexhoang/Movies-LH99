@@ -23,14 +23,14 @@ function TopRated() {
 
 
     return (
-        <div style={{ borderBottom: "1px solid #424242" }}>
+        <div style={{ borderBottom: "1px solid #616161" }}>
             <Grid container mt={8} px={5} mb={4}>
                 <Grid item xs={6} >
-                    <Typography color="white" variant="h6" fontWeight={700}> TOP RATED</Typography>
+                    <Typography color="white" variant="h6" fontWeight={700}> Nổi bật</Typography>
                 </Grid>
 
                 <Grid item xs={6} textAlign="right">
-                    <NavLink to="/treading" className="more"> View more </NavLink>
+                    <NavLink to="/treading" className="more"> Xem thêm </NavLink>
                 </Grid>
             </Grid>
 

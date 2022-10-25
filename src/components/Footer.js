@@ -71,7 +71,7 @@ function Footer() {
                 <Grid item xs={6} textAlign="right">
                     <a href="#" style={{ color: "#abb7c4", textDecoration: "none" }}>
                         <Typography variant="body1" fontWeight={700} className="backTop">
-                            Back to top <ArrowUpwardIcon />
+                            Quay lên trên <ArrowUpwardIcon />
                         </Typography>
                     </a>
                 </Grid>

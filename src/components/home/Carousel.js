@@ -50,7 +50,7 @@ function Carousel() {
                                     display: "block",
                                     objectFit: "cover",
                                     width: "100%",
-                                    minHeight: "650px",
+                                    minHeight: "680px",
                                 }}
                                     src={`https://www.themoviedb.org/t/p/w1920_and_h800_multi_faces/${movie.backdrop_path}`} />
                             </Grid>
@@ -70,7 +70,7 @@ function Carousel() {
                                 <NavLink to={`/${movie.media_type}/${movie.id}`}>
                                     <button
                                         className="custom-btn btn-slider">
-                                        <span>CLICK</span><span>LEARN MORE</span>
+                                        <span>TRAILER</span><span>Xem trước</span>
                                     </button>
                                 </NavLink>
                             </Grid>

@@ -39,8 +39,8 @@ function Cast() {
         6: { items: 7 },
     }
     return (
-        <div style={{ marginTop: "30px", width: "90%", marginLeft: "5%" }}>
-            <Typography variant="h3" textAlign="center" mb={3} color="white">Cast</Typography>
+        <div style={{ marginTop: "50px", width: "90%", marginLeft: "5%" }}>
+            <Typography variant="h4" textAlign="center" mb={3} color="white">Diễn viên</Typography>
             {cast !== "" ?
                 <AliceCarousel
                     mouseTracking

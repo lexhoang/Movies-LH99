@@ -71,7 +71,7 @@ function MediaDetail() {
                 <Grid container pt={12}
                     style={{
                         width: "80%", margin: "0 0 0 10%", display: "flex",
-                        position: "absolute", top: "40px", color: "white", fontWeight: "600"
+                        position: "absolute", top: "60px", color: "white", fontWeight: "600"
                     }}>
                     <Grid item md={4} xs={12} mb={4} position="relative" className="animate__animated animate__fadeInDown">
                         <img alt="poster" className="img-media" src={movie.poster_path !== null ? `https://image.tmdb.org/t/p/w300${movie.poster_path}` : noInfoImg} ></img>
@@ -99,7 +99,7 @@ function MediaDetail() {
                             <button style={{ color: "white" }} className="w-100 btn btn-trailer js-modal-btn" data-channel="custom">
                                 <span>
                                     <YouTubeIcon style={{ color: "red" }}></YouTubeIcon>
-                                    &nbsp;Watch Trailer
+                                    &nbsp;Xem Trailer
                                 </span>
                             </button>
                         </Grid>
@@ -118,7 +118,7 @@ function MediaDetail() {
 
                         <Grid container mt={4}>
                             <Typography variant="body1" fontWeight={700}>
-                                <span style={{ color: "#b3b3b3" }}>DURATION : </span>
+                                <span style={{ color: "#b3b3b3" }}>Thời lượng : </span>
                                 {params.type === "movie" ? movie.runtime + " mins" : movie.episode_run_time[0] + " mins per episode"}
                             </Typography>
                         </Grid>
@@ -126,14 +126,14 @@ function MediaDetail() {
                         {params.type === "tv" ?
                             <Grid container mt={1}>
                                 <Typography variant="body1" fontWeight={700}>
-                                    <span style={{ color: "#b3b3b3" }}>SEASONS : </span>
+                                    <span style={{ color: "#b3b3b3" }}>Tập : </span>
                                     {movie.number_of_seasons}&nbsp;
                                 </Typography>
                             </Grid> : null}
 
                         <Grid container mt={1}>
                             <Typography variant="body1" fontWeight={700}>
-                                <span style={{ color: "#b3b3b3" }}>STUDIO : </span>
+                                <span style={{ color: "#b3b3b3" }}>Quốc gia : </span>
                                 {movie.production_companies.map((el, index) => {
                                     return index === 0 ? el.name : " , " + el.name
                                 })}
@@ -143,14 +143,14 @@ function MediaDetail() {
                         {params.type === "movie" ?
                             <Grid container mt={1}>
                                 <Typography variant="body1" fontWeight={700}>
-                                    <span style={{ color: "#b3b3b3" }}>RELEASE DATE : </span>
+                                    <span style={{ color: "#b3b3b3" }}>Ngày công chiếu : </span>
                                     {movie.release_date}&nbsp;
                                 </Typography>
                             </Grid> : null}
 
                         <Grid container mt={1}>
                             <Typography variant="body1" fontWeight={700}>
-                                <span style={{ color: "#b3b3b3" }}>STATUS : </span>
+                                <span style={{ color: "#b3b3b3" }}>Trạng thái : </span>
                                 {movie.status}
                             </Typography>
                         </Grid>

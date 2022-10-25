@@ -23,14 +23,14 @@ function Moives() {
 
 
     return (
-        <div style={{ borderBottom: "1px solid #424242", marginTop: "80px" }}>
+        <div style={{ borderBottom: "1px solid #616161", marginTop: "80px" }}>
             <Grid container mt={8} px={5} mb={4}>
                 <Grid item xs={6} >
-                    <Typography color="white" variant="h6" fontWeight={700}> MOVIES ON AIR</Typography>
+                    <Typography color="white" variant="h6" fontWeight={700}> Phim lẻ</Typography>
                 </Grid>
 
                 <Grid item xs={6} textAlign="right">
-                    <NavLink to="/movies" className="more"> View more </NavLink>
+                    <NavLink to="/movies" className="more"> Xem thêm </NavLink>
                 </Grid>
             </Grid>
 

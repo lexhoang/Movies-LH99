@@ -23,14 +23,14 @@ function TvSeries() {
 
 
     return (
-        <div style={{ borderBottom: "1px solid #424242" }}>
+        <div style={{ borderBottom: "1px solid #616161" }}>
             <Grid container mt={8} px={5} mb={4}>
                 <Grid item xs={6} >
-                    <Typography color="white" variant="h6" fontWeight={700}> TVSERIES ON AIR</Typography>
+                    <Typography color="white" variant="h6" fontWeight={700}> Phim bộ</Typography>
                 </Grid>
 
                 <Grid item xs={6} textAlign="right">
-                    <NavLink to="/tvseries" className="more"> View more </NavLink>
+                    <NavLink to="/tvseries" className="more"> Xem thêm </NavLink>
                 </Grid>
             </Grid>
             <div  >

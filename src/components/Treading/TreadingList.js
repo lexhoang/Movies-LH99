@@ -33,7 +33,7 @@ function TreadingList() {
     return (
         <div style={{ paddingTop: "10rem" }}>
             <Grid container>
-                <Typography ml={5} mb={5} variant="h5" fontWeight={700} sx={{ color: "red" }}> TRENING SHOWS: </Typography>
+                <Typography ml={5} mb={5} variant="h5" fontWeight={700} sx={{ color: "white" }}> NỔI BẬT </Typography>
             </Grid>
 
             <Grid container justifyContent="center">

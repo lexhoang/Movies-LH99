@@ -91,28 +91,28 @@ function TvSeriesList() {
             })
     }, [])
     return (
-        <div style={{ paddingTop: "8rem" }}>
+        <div style={{ paddingTop: "9rem" }}>
             <Grid container p={2} mb={5}>
                 <Grid item md={8} xs={12} mb={2}>
-                    <Typography ml={5} variant="h5" fontWeight={700} sx={{ color: "red" }}> TvSeries </Typography>
+                    <Typography ml={5} variant="h5" fontWeight={700} sx={{ color: "white", }}> PHIM BỘ </Typography>
                 </Grid>
 
                 <Grid item md={4} xs={12} sx={{ textAlign: 'right' }}>
                     <Grid container>
-                        <Grid item md={10}>
+                        <Grid item md={9}>
                             <Input
                                 value={searchName}
                                 onChange={(e) => setSearchName(e.target.value)}
                                 style={{ backgroundColor: "hsla(0,0%,100%,.16)", color: "#fff", width: "95%", height: "40px", paddingLeft: "30px" }}
-                                placeholder="  Search tvSeries Here ...">
+                                placeholder="  Nhập tên phim ...">
                             </Input>
                         </Grid>
 
-                        <Grid item md={1}>
+                        <Grid item md={3}>
                             <Button
                                 variant="contained" onClick={handleSearch}
                                 style={{ marginBottom: "10px", fontWeight: "600", color: "white", backgroundImage: "linear-gradient(45deg,#00aeff,#a68eff)" }}>
-                                Search
+                                Tìm kiếm
                             </Button>
                         </Grid>
                     </Grid>

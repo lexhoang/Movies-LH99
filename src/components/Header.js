@@ -20,7 +20,7 @@ export default function Header() {
             position: "fixed", width: "100%", zIndex: 10,
             backgroundColor: `${scroll ? "rgb(0, 0, 0)" : "rgba(0, 0, 0, 0.3)"}`, color: "white"
         }}>
-            <Grid container py={1} style={{ borderBottom: "1px solid #424242" }}>
+            <Grid container py={1} style={{ borderBottom: "1px solid #616161" }}>
                 <Grid item md={6} xs={6} sx={{ pl: 2 }} >
                     <Typography component={Link} to="/" variant="h4"
                         style={{ textDecoration: "none", color: "white", fontSize: "30px" }} fontWeight={900}>
@@ -40,9 +40,9 @@ export default function Header() {
                         <Grid item md={2} xs={3} textAlign="center" >
                             <Button component={Link} style={{ textDecoration: "none", color: "white", }} to="/">
                                 <Grid container >
-                                    <Grid item md={6} xs={12}><HomeIcon></HomeIcon></Grid>
-                                    <Grid item md={6} xs={12}>
-                                        HOME
+                                    <Grid item md={4} xs={12}><HomeIcon></HomeIcon></Grid>
+                                    <Grid item md={8} xs={12}>
+                                        Trang chủ
                                     </Grid>
                                 </Grid>
                             </Button >
@@ -52,7 +52,7 @@ export default function Header() {
                                 <Grid container >
                                     <Grid item md={6} xs={12}><WhatshotIcon></WhatshotIcon> </Grid>
                                     <Grid item md={6} xs={12}>
-                                        TRENDING
+                                        Xu hướng
                                     </Grid>
                                 </Grid>
 
@@ -63,7 +63,7 @@ export default function Header() {
                                 <Grid container >
                                     <Grid item md={6} xs={12}> <GroupWorkIcon></GroupWorkIcon> </Grid>
                                     <Grid item md={6} xs={12}>
-                                        MOVIES
+                                        Phim lẻ
                                     </Grid>
                                 </Grid>
 
@@ -75,7 +75,7 @@ export default function Header() {
                                 <Grid container >
                                     <Grid item md={6} xs={12}><LiveTvIcon></LiveTvIcon> </Grid>
                                     <Grid item md={6} xs={12}>
-                                        TVSERIES
+                                        Phim bộ
                                     </Grid>
                                 </Grid>
                             </Button>
