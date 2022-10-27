@@ -133,7 +133,7 @@ function MediaDetail() {
 
                         <Grid container mt={1}>
                             <Typography variant="body1" fontWeight={700}>
-                                <span style={{ color: "#b3b3b3" }}>Quốc gia : </span>
+                                <span style={{ color: "#b3b3b3" }}>Sản xuất : </span>
                                 {movie.production_companies.map((el, index) => {
                                     return index === 0 ? el.name : " , " + el.name
                                 })}

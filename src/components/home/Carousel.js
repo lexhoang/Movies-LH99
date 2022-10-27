@@ -70,7 +70,7 @@ function Carousel() {
                                 <NavLink to={`/${movie.media_type}/${movie.id}`}>
                                     <button
                                         className="custom-btn btn-slider">
-                                        <span>TRAILER</span><span>Xem trước</span>
+                                        <span>CLICK</span><span>TRAILER</span>
                                     </button>
                                 </NavLink>
                             </Grid>
