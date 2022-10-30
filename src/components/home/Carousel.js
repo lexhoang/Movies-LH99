@@ -65,8 +65,8 @@ function Carousel() {
 
                                 <h5 style={{ color: "red", fontWeight: 700 }}>{movie.media_type.toUpperCase()}</h5>
 
-                                <p className="overview" style={{ color: "white", fontWeight: 500, width: "100%" }} >{movie.overview}</p>
-
+                                {/* <p className="overview" style={{ color: "white", fontWeight: 500, width: "100%" }} >{movie.overview}</p> */}
+                                <br />
                                 <NavLink to={`/${movie.media_type}/${movie.id}`}>
                                     <button
                                         className="custom-btn btn-slider">
