@@ -55,7 +55,7 @@ function Footer() {
                     <Grid item xs={12} mt={2}>
                         <Input placeholder="Enter your email" style={{ backgroundColor: "rgba(0, 0, 0, 0.3)" }} />
                     </Grid>
-                    <Link to="/" style={{ color: "red", textDecoration: "none" }} >
+                    <Link to="#" style={{ color: "red", textDecoration: "none" }} >
                         <Typography mt={2} variant="h6" fontWeight={700}> SUBSCRIBE NOW</Typography>
                     </Link>
                 </Grid>

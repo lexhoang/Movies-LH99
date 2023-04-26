@@ -30,7 +30,7 @@ function TvSeries() {
                 </Grid>
 
                 <Grid item xs={6} textAlign="right">
-                    <NavLink to="/tvseries" className="more"> Xem thêm </NavLink>
+                    <NavLink to="tvseries" className="more"> Xem thêm </NavLink>
                 </Grid>
             </Grid>
             <div  >

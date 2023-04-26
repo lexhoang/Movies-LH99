@@ -66,7 +66,7 @@ export default function Header() {
                         </Grid>
 
                         <Grid item md={3} textAlign="center">
-                            <NavLink style={styleNavLink} to="/treading" >
+                            <NavLink style={styleNavLink} to="treading" >
                                 <Button className='btn-tools' >
                                     <Grid container color={'white'}>
                                         <Grid item md={2} xs={12}><WhatshotIcon></WhatshotIcon> </Grid>
@@ -79,7 +79,7 @@ export default function Header() {
                         </Grid>
 
                         <Grid item md={3} textAlign="center">
-                            <NavLink style={styleNavLink} to="/movies" >
+                            <NavLink style={styleNavLink} to="movies" >
                                 <Button className='btn-tools'>
                                     <Grid container color={'white'}>
                                         <Grid item md={2} xs={12}> <GroupWorkIcon></GroupWorkIcon> </Grid>
@@ -92,8 +92,8 @@ export default function Header() {
                         </Grid>
 
                         <Grid item md={3} textAlign="center">
-                            <NavLink style={styleNavLink} to="/tvseries">
-                                <Button className='btn-tools' to="/tvseries">
+                            <NavLink style={styleNavLink} to="tvseries">
+                                <Button className='btn-tools'>
                                     <Grid container color={'white'}>
                                         <Grid item md={2} xs={12}><LiveTvIcon></LiveTvIcon> </Grid>
                                         <Grid item md={10} xs={12} px={1} sx={{ fontSize: { lg: '14px', md: '10px' } }}>
@@ -130,7 +130,7 @@ export default function Header() {
                         </Grid>
 
                         <Grid item md={2} xs={3} textAlign="center">
-                            <NavLink className='btn-tools' to="/treading" style={styleNavLinkMobile}>
+                            <NavLink className='btn-tools' to="treading" style={styleNavLinkMobile}>
                                 <Button className='btn-tools'>
                                     <Grid container color={'white'}>
                                         <Grid item md={2} xs={12}><WhatshotIcon></WhatshotIcon> </Grid>
@@ -143,7 +143,7 @@ export default function Header() {
                         </Grid>
 
                         <Grid item md={2} xs={3} textAlign="center">
-                            <NavLink className='btn-tools' to="/movies" style={styleNavLinkMobile}>
+                            <NavLink className='btn-tools' to="movies" style={styleNavLinkMobile}>
                                 <Button className='btn-tools'>
                                     <Grid container color={'white'}>
                                         <Grid item md={2} xs={12}> <GroupWorkIcon></GroupWorkIcon> </Grid>
@@ -156,7 +156,7 @@ export default function Header() {
                         </Grid>
 
                         <Grid item md={2} xs={3} textAlign="center">
-                            <NavLink className='btn-tools' to="/tvseries" style={styleNavLinkMobile}>
+                            <NavLink className='btn-tools' to="tvseries" style={styleNavLinkMobile}>
                                 <Button className='btn-tools'>
                                     <Grid container color={'white'}>
                                         <Grid item md={2} xs={12}><LiveTvIcon></LiveTvIcon> </Grid>

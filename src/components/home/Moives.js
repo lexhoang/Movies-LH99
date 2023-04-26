@@ -30,7 +30,7 @@ function Moives() {
                 </Grid>
 
                 <Grid item xs={6} textAlign="right">
-                    <NavLink to="/movies" className="more"> Xem thêm </NavLink>
+                    <NavLink to="movies" className="more"> Xem thêm </NavLink>
                 </Grid>
             </Grid>
 

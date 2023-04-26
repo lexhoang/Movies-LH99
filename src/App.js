@@ -11,7 +11,7 @@ import MoivesPage from './page/MoviesPage';
 import TvSeriesPage from './page/TvSeriesPage';
 import TreadingPage from './page/TreadingPage';
 import MediaDetailPage from './page/MediaDetailPage';
-import { Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Layout from './components/Layout';
 
 

@@ -30,7 +30,7 @@ function TopRated() {
                 </Grid>
 
                 <Grid item xs={6} textAlign="right">
-                    <NavLink to="/treading" className="more"> Xem thêm </NavLink>
+                    <NavLink to="treading" className="more"> Xem thêm </NavLink>
                 </Grid>
             </Grid>
 
