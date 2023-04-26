@@ -1,4 +1,4 @@
-import { Container, Grid, Typography, TextField } from '@mui/material';
+import { Grid, Typography } from '@mui/material';
 import { Link } from "react-router-dom";
 import { Input } from "reactstrap";
 import '../styles/footer.css'
