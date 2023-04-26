@@ -72,14 +72,14 @@ function MediaDetail() {
 
                 <Grid container pt={12}
                     style={{
-                        width: "100%", margin: "0 0 0 10%", display: "flex",
-                        position: "absolute", top: "60px", color: "white", fontWeight: "600"
+                        width: "100%", padding: "0 10%",
+                        position: "absolute", top: "12%", color: "white", fontWeight: "600"
                     }}>
-                    <Grid item md={4} xs={12} mb={4} position="relative" className="animate__animated animate__fadeInDown">
+                    <Grid item lg={4} xs={12} mb={4} position="relative" className="animate__animated animate__fadeInDown">
                         <img alt="poster" className="img-media" src={movie.poster_path !== null ? `https://image.tmdb.org/t/p/w300${movie.poster_path}` : noInfoImg} ></img>
                     </Grid>
 
-                    <Grid item md={8} xs={12} className="animate__animated animate__fadeInDown animate__delay-1s"
+                    <Grid item lg={8} xs={12} className="animate__animated animate__fadeInDown animate__delay-1s"
                         style={{ display: "flex", flexDirection: "column", width: "100%", fontSize: "0.95rem", fontWeight: 700 }}>
                         <Grid container>
                             <Typography variant="h4" style={{ color: "white" }}>{params.type === "movie" ? movie.title : movie.name}</Typography>

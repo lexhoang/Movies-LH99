@@ -8,14 +8,26 @@
     width: "80%";
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
+
     .bg-media {
-        min-height: 1500px;
+        min-height: 1500px !important;
     }
 
     .img-media {
-        object-fit: fill;
-        width: 100%;
+        object-fit: fill !important;
+        width: 85% !important;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .bg-media {
+        min-height: 1800px !important;
+    }
+
+    .img-media {
+        object-fit: fill !important;
+        width: 60% ;
     }
 }
 
