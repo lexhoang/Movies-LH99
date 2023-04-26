@@ -162,7 +162,9 @@ function MoivesList() {
                                         color: movie.vote_average > 8 ? "#34cc34" : movie.vote_average > 6 ? "orange" : "red"
                                     }}>{Math.round(movie.vote_average * 10) / 10}</span>
                                     <img alt="poster" src={movie.poster_path !== null ? `https://image.tmdb.org/t/p/w300${movie.poster_path}` : noInfoImg}></img>
-                                    <div className="content-title">{movie.title + `(${movie.release_date ? movie.release_date.slice(0, 4) : "unknow"})`}</div>
+                                    <Grid className="content-title" sx={{ fontSize: { md: '16px', xs: '12px' } }}>
+                                        {movie.title + `(${movie.release_date ? movie.release_date.slice(0, 4) : "unknow"})`}
+                                    </Grid>
                                 </NavLink>
                             </Grid>
                         )

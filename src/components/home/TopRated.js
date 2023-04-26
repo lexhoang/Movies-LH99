@@ -44,7 +44,9 @@ function TopRated() {
                                         color: topRated.vote_average > 8 ? "#34cc34" : topRated.vote_average > 6 ? "orange" : "red"
                                     }}>{Math.round(topRated.vote_average * 10) / 10}</span>
                                     <img alt="poster" src={`https://image.tmdb.org/t/p/w300${topRated.poster_path}`}></img>
-                                    <div className="content-title">{topRated.title + `(${topRated.release_date.slice(0, 4)})`}</div>
+                                    <Grid className="content-title" sx={{ fontSize: { md: '16px', xs: '12px' } }}>
+                                        {topRated.title + `(${topRated.release_date.slice(0, 4)})`}
+                                    </Grid>
                                 </NavLink>
                             </Grid>
                         )

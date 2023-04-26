@@ -11,29 +11,27 @@ import MoivesPage from './page/MoviesPage';
 import TvSeriesPage from './page/TvSeriesPage';
 import TreadingPage from './page/TreadingPage';
 import MediaDetailPage from './page/MediaDetailPage';
-import { Routes, Route } from "react-router-dom";
+import { Router, Routes, Route } from "react-router-dom";
 import Layout from './components/Layout';
 
 
 function App() {
   return (
-    <div>
-      <Routes>
-        <Route path='/' element={<Layout />}>
-          <Route index element={<HomePage />} />
-          <Route path="movies" element={<MoivesPage />} />
-          <Route path="movies/page/:page" element={<MoivesPage />} />
+    <Routes>
+      <Route path='/' element={<Layout />}>
+        <Route index element={<HomePage />} />
+        <Route path="movies" element={<MoivesPage />} />
+        <Route path="movies/page/:page" element={<MoivesPage />} />
 
-          <Route path="tvseries" element={<TvSeriesPage />} />
-          <Route path="tvseries/page/:page" element={<TvSeriesPage />} />
+        <Route path="tvseries" element={<TvSeriesPage />} />
+        <Route path="tvseries/page/:page" element={<TvSeriesPage />} />
 
-          <Route path="treading" element={<TreadingPage />} />
-          <Route path="treading/page/:page" element={<TreadingPage />} />
+        <Route path="treading" element={<TreadingPage />} />
+        <Route path="treading/page/:page" element={<TreadingPage />} />
 
-          <Route path=":type/:movieId" element={<MediaDetailPage />} />
-        </Route>
-      </Routes>
-    </div>
+        <Route path=":type/:movieId" element={<MediaDetailPage />} />
+      </Route>
+    </Routes>
   );
 }
 

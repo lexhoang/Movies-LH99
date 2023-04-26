@@ -1,5 +1,5 @@
 import { Container, Grid, Typography, TextField } from '@mui/material';
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Input } from "reactstrap";
 import '../styles/footer.css'
 // import Bgfooter from "../assets/image/footer-bg.jpg";
@@ -19,34 +19,34 @@ function Footer() {
 
                 <Grid item md={2} sm={6} xs={12} mb={4}>
                     <Typography variant="h6" fontWeight={700} sx={{ color: "#fff" }}>Resources</Typography>
-                    <NavLink to="" style={{ color: "#abb7c4" }}>
+                    <Link to="#" style={{ color: "#abb7c4" }}>
                         <Typography variant="body2" mt={1}> About CinemyPlex</Typography>
-                    </NavLink>
-                    <NavLink to="" style={{ color: "#abb7c4" }}>
+                    </Link>
+                    <Link to="#" style={{ color: "#abb7c4" }}>
                         <Typography variant="body2" mt={1}> Contact Us </Typography>
-                    </NavLink>
-                    <NavLink to="" style={{ color: "#abb7c4" }}>
+                    </Link>
+                    <Link to="#" style={{ color: "#abb7c4" }}>
                         <Typography variant="body2" mt={1}> Forums </Typography>
-                    </NavLink>
-                    <NavLink to="" style={{ color: "#abb7c4" }}>
+                    </Link>
+                    <Link to="#" style={{ color: "#abb7c4" }}>
                         <Typography variant="body2" mt={1}> Blog </Typography>
-                    </NavLink>
-                    <NavLink to="" style={{ color: "#abb7c4" }}>
+                    </Link>
+                    <Link to="#" style={{ color: "#abb7c4" }}>
                         <Typography variant="body2" mt={1}> Help Center </Typography>
-                    </NavLink>
+                    </Link>
                 </Grid>
 
                 <Grid item md={2} sm={6} xs={12} mb={4}>
                     <Typography variant="h6" fontWeight={700} sx={{ color: "#fff" }}>Legal</Typography>
-                    <NavLink to="" style={{ color: "#abb7c4" }}>
+                    <Link to="#" style={{ color: "#abb7c4" }}>
                         <Typography variant="body2" mt={1}> Terms of Use</Typography>
-                    </NavLink>
-                    <NavLink to="" style={{ color: "#abb7c4" }}>
+                    </Link>
+                    <Link to="#" style={{ color: "#abb7c4" }}>
                         <Typography variant="body2" mt={1}> Privacy Policy </Typography>
-                    </NavLink>
-                    <NavLink to="" style={{ color: "#abb7c4" }}>
+                    </Link>
+                    <Link to="#" style={{ color: "#abb7c4" }}>
                         <Typography variant="body2" mt={1}> Security </Typography>
-                    </NavLink>
+                    </Link>
                 </Grid>
 
                 <Grid item md={4} sm={6} xs={12}>

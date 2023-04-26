@@ -44,7 +44,9 @@ function Moives() {
                                         color: movie.vote_average > 8 ? "#34cc34" : movie.vote_average > 6 ? "orange" : "red"
                                     }}>{Math.round(movie.vote_average * 10) / 10}</span>
                                     <img alt="poster" src={`https://image.tmdb.org/t/p/w300${movie.poster_path}`}></img>
-                                    <div className="content-title">{movie.title + `(${movie.release_date.slice(0, 4)})`}</div>
+                                    <Grid className="content-title" sx={{ fontSize: { md: '16px', xs: '12px' } }}>
+                                        {movie.title + `(${movie.release_date.slice(0, 4)})`}
+                                    </Grid>
                                 </NavLink>
                             </Grid>
                         )

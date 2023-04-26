@@ -11,9 +11,18 @@ import '../styles/header.css';
 const styleNavLink = ({ isActive }) => ({
     textDecoration: "none",
     backgroundColor: isActive ? "rgb(239 68 68)" : "",
-    padding: "12px 20px",
+    padding: "14px",
     borderRadius: "2px 16px",
     fontSize: "12px",
+    fontWeight: isActive ? "bold" : "",
+})
+
+const styleNavLinkMobile = ({ isActive }) => ({
+    textDecoration: "none",
+    backgroundColor: isActive ? "rgb(239 68 68)" : "",
+    padding: "14px 0",
+    borderRadius: "2px 16px",
+    fontSize: "8px",
     fontWeight: isActive ? "bold" : "",
 })
 
@@ -108,11 +117,11 @@ export default function Header() {
                 <Grid item xs={12}>
                     <Grid container>
                         <Grid item md={2} xs={3} textAlign="center" >
-                            <NavLink className='btn-tools' to="/" style={styleNavLink}>
+                            <NavLink className='btn-tools' to="/" style={styleNavLinkMobile}>
                                 <Button className='btn-tools'>
                                     <Grid container color={'white'}>
                                         <Grid item md={2} xs={12}><HomeIcon></HomeIcon></Grid>
-                                        <Grid item md={10} xs={12} px={1}>
+                                        <Grid item md={10} xs={12} px={1} sx={{ fontSize: '9px' }}>
                                             Trang chủ
                                         </Grid>
                                     </Grid>
@@ -121,11 +130,11 @@ export default function Header() {
                         </Grid>
 
                         <Grid item md={2} xs={3} textAlign="center">
-                            <NavLink className='btn-tools' to="/treading" style={styleNavLink}>
+                            <NavLink className='btn-tools' to="/treading" style={styleNavLinkMobile}>
                                 <Button className='btn-tools'>
                                     <Grid container color={'white'}>
                                         <Grid item md={2} xs={12}><WhatshotIcon></WhatshotIcon> </Grid>
-                                        <Grid item md={10} xs={12} px={1}>
+                                        <Grid item md={10} xs={12} px={1} sx={{ fontSize: '9px' }}>
                                             Xu hướng
                                         </Grid>
                                     </Grid>
@@ -134,11 +143,11 @@ export default function Header() {
                         </Grid>
 
                         <Grid item md={2} xs={3} textAlign="center">
-                            <NavLink className='btn-tools' to="/movies" style={styleNavLink}>
+                            <NavLink className='btn-tools' to="/movies" style={styleNavLinkMobile}>
                                 <Button className='btn-tools'>
                                     <Grid container color={'white'}>
                                         <Grid item md={2} xs={12}> <GroupWorkIcon></GroupWorkIcon> </Grid>
-                                        <Grid item md={10} xs={12} px={1}>
+                                        <Grid item md={10} xs={12} px={1} sx={{ fontSize: '9px' }}>
                                             Phim lẻ
                                         </Grid>
                                     </Grid>
@@ -147,11 +156,11 @@ export default function Header() {
                         </Grid>
 
                         <Grid item md={2} xs={3} textAlign="center">
-                            <NavLink className='btn-tools' to="/tvseries" style={styleNavLink}>
+                            <NavLink className='btn-tools' to="/tvseries" style={styleNavLinkMobile}>
                                 <Button className='btn-tools'>
                                     <Grid container color={'white'}>
                                         <Grid item md={2} xs={12}><LiveTvIcon></LiveTvIcon> </Grid>
-                                        <Grid item md={10} xs={12} px={1}>
+                                        <Grid item md={10} xs={12} px={1} sx={{ fontSize: '9px' }}>
                                             Phim bộ
                                         </Grid>
                                     </Grid>

@@ -153,7 +153,9 @@ function TvSeriesList() {
                                     color: tvSeries.vote_average > 8 ? "#34cc34" : tvSeries.vote_average > 6 ? "orange" : "red"
                                 }}>{tvSeries.vote_average > 0 ? Math.round(tvSeries.vote_average * 10) / 10 : "null"}</span>
                                 <img alt="thumb" src={tvSeries.poster_path !== null ? `https://image.tmdb.org/t/p/w300${tvSeries.poster_path}` : noInfoImg} ></img>
-                                <div className="content-title">{tvSeries.name + `(${tvSeries.first_air_date ? tvSeries.first_air_date.slice(0, 4) : "unknow"})`}</div>
+                                <Grid className="content-title" sx={{ fontSize: { md: '16px', xs: '12px' } }}>
+                                    {tvSeries.name + `(${tvSeries.first_air_date ? tvSeries.first_air_date.slice(0, 4) : "unknow"})`}
+                                </Grid>
                             </NavLink>
                         </Grid>
                     )
