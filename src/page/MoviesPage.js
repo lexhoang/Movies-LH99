@@ -1,6 +1,4 @@
-import Header from '../components/Header';
 import MoivesList from '../components/Movies/MoviesList'
-import Footer from '../components/Footer';
 
 function MoviesPage() {
     return (
